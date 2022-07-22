@@ -7,13 +7,14 @@ const imageStyle = {
     width: '100%',
     objectFit: 'contain',
     padding: 5,
-    maxHeight: 200
+    maxHeight: 200,
+    minHeight: 100,
 };
 
 function CardItem({item}) {
     return (
         <Card style={{ width: '18rem' }}>
-        <Card.Img style={imageStyle} variant="top" src={item.image} />
+        <Card.Img style={imageStyle} variant="top" src={`https://eshop.reskimulud.my.id/products/image/${item.image}`} />
         <Card.Body>
           <Card.Title>{item.title}</Card.Title>
           <Card.Text>
